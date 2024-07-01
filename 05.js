@@ -1,18 +1,18 @@
 function pro(nums){
     const n=nums.length;
-    const output=new Array (n.fill(11));
-}
+    
 let product =1;
+let output=1;
+
 for(let i=0;i<n;i++){
-    output[i]*=product;
+    output[1]*=product;
     product*=nums[i];
+    output+=1;
+    
+}
+return product;
 }
 let prod=1;
-for(let i=n-1;i>=0;i--){
-    output[i]*=prod;
-    prod*=nums[i];
-    return output;
-
-}
+let n=4;
 const nums=[1,2,3,4]
 console.log(pro(nums));
